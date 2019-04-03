@@ -1,0 +1,53 @@
+
+/* Universal */
+html {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 16px;
+  line-height: 1.75rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0.85rem 0rem;
+}
+
+h3{
+  font-size: 1.75rem;
+  font-weight: bold;
+  margin-bottom: 1.75rem;
+  padding-top: 0.3rem;
+  letter-spacing: 1.33px;
+}
+
+h4{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0px 8px;
+  margin-bottom: 0.75rem;
+  padding-top: 0.3rem;
+}
+
+
+header{
+  display: flex;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.LogoContainer span,
+.LogoContainer p {
+  font-family: 'Cahin', sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 22px;
+}
+
+.LogoContainer span{
+  color: RoyalBlue;
+}
+
+.LogoContainer p {
+  font-weight: normal;
+}
