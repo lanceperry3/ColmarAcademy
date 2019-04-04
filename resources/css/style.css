@@ -4,6 +4,7 @@ html {
   font-family: 'Oxygen', sans-serif;
   font-size: 16px;
   line-height: 1.75rem;
+
 }
 
 h2 {
@@ -26,8 +27,73 @@ h4{
   margin: 0px 8px;
   margin-bottom: 0.75rem;
   padding-top: 0.3rem;
+  margin-left: 0rem;
 }
 
+.MainBannerText h4,
+.InfoBanner h4,
+.RightColumn h4 {
+  margin-left: 0rem;
+}
+
+p {
+  font-family: 'Quattrocento Sans', sans-serif;
+  font-size: 19px;
+  margin: 0.43rem 0rem;
+  line-height: 1.15rem;
+  letter-spacing: 0.2px;
+}
+
+
+.InfoBanner .RightContent p,
+.ThesisBanner .RightColumn p {
+  padding-right: 0.5rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: Blue;
+  transition:
+}
+
+/* Univeral Banner*/
+
+.MainBanner,
+.InfoBanner,
+.CourseBanner,
+.ThesisBanner {
+  display: flex;
+
+}
+
+.MainBanner,
+.InfoBanner ,
+.CourseBanner,
+.ThesisBanner {
+
+  padding-left: 24px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+
+.MainBanner img,
+ .LeftContent img {
+  width: 100%;
+  padding: 16px;
+}
+/*Main Imgages and Video*/
+.BannerImg,
+.LeftContent,
+.VideoContent {
+  min-width: 60%;
+  width: 60%;
+}
+
+/* Header*/
 
 header{
   display: flex;
@@ -36,6 +102,12 @@ header{
   justify-content: space-between;
   font-size: 18px;
 }
+
+.LogoContainer {
+  display: flex;
+  align-items: center;
+}
+
 .LogoContainer span,
 .LogoContainer p {
   font-family: 'Cahin', sans-serif;
@@ -51,3 +123,471 @@ header{
 .LogoContainer p {
   font-weight: normal;
 }
+
+.LogoContainer img {
+  height: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 2.5px;
+}
+
+nav {
+  padding-right: 1.5rem;
+}
+
+nav span {
+  padding: 0px 1rem;
+}
+
+.IconNav {
+ display: none;
+}
+
+/*Main Banner*/
+
+.MainBanner {
+  background-color: rgba(210, 210, 210, 1);
+}
+
+.MainBannerText{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 40%;
+  padding-left: 40px;
+}
+
+.btn {
+  margin-top: 1rem;
+  text-align: center;
+  background-color: rgba(0, 25, 135, 0.7);
+  background-color: hsl(230, 70%, 50%);
+  color: white;
+  padding: 12px 0px;
+  margin-right: 1rem;
+  width: 70%;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.btn:hover {
+  background-color: hsl(230, 80%, 40%);
+  transition: background-color, 0.5s, ease-out, 0.3s;
+}
+
+.MobileBannerImg {
+  display: none;
+}
+
+/*InfoBanner*/
+.InfoBanner {
+  margin-bottom: 2rem;
+}
+.InfoBanner h3 {
+  padding-top: 1rem;
+}
+.RightContent {
+  width: 40%;
+  height: auto;
+
+}
+.InfoBanner,
+.LeftContent,
+.RightContent {
+  display: flex;
+  flex-wrap: wrap;
+}
+.orientation,
+.campus,
+.GuestLecture {
+  display: flex;
+  align-items: center;
+  height: 35%;
+  margin-left: 2rem;
+  margin-top: 0px;
+}
+.OrientationText,
+.CampusText, .GuestLectureText
+ {
+  display: flex;
+  width: 65%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.GuestLecture{
+  background-color: rgba(220, 220, 220, 0.85);
+}
+.LeftContent p ,.LeftContent h3 {
+  padding-left: 1rem;
+}
+
+.orientation img,
+.campus img,
+.GuestLecture img {
+  height: auto;
+  width: 35%;
+  padding-right: 3rem;
+  Padding-left: 2rem;
+}
+
+#mobile-orientation-img,
+#mobile-campus-img,
+#mobile-lecture-img {
+  display: none;
+}
+
+/* CourseBanner */
+
+.CourseBanner {
+  background-color: rgba(220, 220, 220, 0.85);
+}
+.CourseBanner,
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.courses {
+  width: 100%;
+  justify-content: center;
+}
+
+.SoftwareEngineering, .ComputerArt, .Design,
+.Data, .Business, .Marketing {
+  width: 28%;
+  z-index: 5;
+  margin: 0.5rem 0.4rem;
+  background-color: white;
+  padding-bottom: 1rem;
+}
+
+.SoftwareEngineering:hover, .ComputerArt:hover, .Design:hover,
+.Data:hover, .Business:hover, .Marketing:hover {
+  box-shadow: 5px 5px 8px rgba(30,30,30,0.35);
+  transition: box-shadow, 1s, ease, 0.3s;
+}
+
+.courses p , .courses h4{
+  opacity: 0.70;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.courses img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+
+/*ThesisBanner*/
+
+.Title{
+  text-align: center;
+  width: 100%;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.ThesisBanner,
+.VideoContent,
+.RightColumn {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ThesisBanner {
+  margin-bottom: 32px;
+}
+
+.RightColumn {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.ThesisBanner .VideoContent p {
+  margin-left: 0px;
+}
+
+.VideoContent h4 {
+  margin: 10px 0px;
+}
+
+.fisma, .NowAndThen {
+  display: flex;
+  align-items: center;
+  height: 35%;
+}
+
+.fisma img, .fisma,
+.NowAndThen img, .NowAndThen {
+  margin-top: 0px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.fisma  img, .NowAndThen img {
+  height: auto;
+  width: 35%;
+  overflow: hidden;
+  margin: 16px 16px;
+}
+
+footer {
+  display: flex;
+  border-top: 1px solid rgba(230, 230, 230, 0.8);
+  justify-content: space-between;
+}
+
+footer p {
+  font-family: 'Cabin', sans-serif;
+  padding: 0px 24px;
+  margin: 3rem 0rem;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .TextNav {
+    display: none;
+  }
+  .IconNav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 1rem;
+    align-items: center;
+  }
+  .Icon {
+    display: none;
+  }
+  .IconNav a {
+    padding: 0rem 0.4rem;
+  }
+  p {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    line-height: 1.2rem;
+  }
+  p {
+    font-size: 14px;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .IconNav {
+    padding: 0rem 0rem
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .LogoContainer {
+    display: none;
+  }
+  .Icon {
+    display: flex;
+  }
+  .IconNav {
+    width: 100%;
+  }
+  .IconNav img {
+    height: 2.33rem;
+  }
+  header {
+    justify-content: space-between;
+    padding: 0rem 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .MainBanner {
+    flex-direction: column;
+    margin: 0rem 0rem;
+    padding: 0rem 0rem;
+    align-items: center;
+  }
+  .MainBanner .BannerImg {
+    width: 100%;
+  }
+  .BannerImg img {
+    display: none;
+  }
+  .MobileBannerImg{
+    display: flex;
+  }
+  .MainBannerText{
+    width: 100%;
+    align-items: center;
+    padding-left: 0px;
+  }
+  .btn {
+    margin-top: 12px;
+    margin-bottom: 32px;
+  }
+  h2 {
+    margin: 32px 0px;
+    padding: 0rem 1rem;
+    text-align: center;
+  }
+  .MainBanner h4 {
+    padding-top: 0px;
+    padding: 0rem 1rem;
+    margin-right: 0px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .InfoBanner {
+    padding: 16px 16px;
+    margin-bottom: 16px;
+  }
+  .LeftContent {
+    display: none;
+  }
+  .RightContent,
+  .RightContent .orientation, .OrientationText,
+  .RightContent .campus, .CampusText,
+  .RightContent .GuestLecture, .GuestLectureText {
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: white;
+
+    margin: auto;
+  }
+  .RightContent img {
+    display: none;
+  }
+  #mobile-orientation-img,
+  #mobile-campus-img,
+  #mobile-lecture-img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    height: auto;
+    margin: 16px 0px;
+
+  }
+  .RightContent h4, .RightContent p, .RightContent span {
+    margin-left: 16px;
+    padding: 0rem 0rem;
+    margin-bottom: 0px;
+    width: 100%;
+  }
+  .RightContent p {
+    margin: 12px 16px;
+  }
+  .RightContent span {
+    font-size: 12px;
+  }
+  .CourseBanner p,
+  .CourseBanner img {
+    display: none;
+  }
+  .CourseBanner {
+    padding: 0px 16px;
+    margin-bottom: 16px;
+    background-color: white;
+  }
+  .courses {
+    flex-direction: column;
+  }
+  .SoftwareEngineering, .ComputerArt, .Design,
+  .Data, .Business, .Marketing {
+    width: 100%;
+    margin: 4px 0px;
+    padding-bottom: 0px;
+    background-color: rgba(220, 220, 220, 0.85);
+  }
+  .CourseBanner h3 {
+    margin-bottom: 16px;
+  }
+  .courses h4 {
+    padding: 0rem 0rem;
+    margin: 16px 16px;
+    font-weight: normal;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .ThesisBanner .RightColumn,
+  .ThesisBanner h4, .ThesisBanner p {
+      display: none;
+  }
+  .ThesisBanner .VideoContent {
+    width: 100%;
+    height: auto;
+  }
+  .ThesisBanner {
+    padding: 0px 16px;
+  }
+  .title {
+    margin-top: 16px;
+  }
+  footer .TermsPrivacy {
+    display: none;
+  }
+  footer p {
+    font-size: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*end8?

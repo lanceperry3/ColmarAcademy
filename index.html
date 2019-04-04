@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html >
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="resources/css/reset.css" type="text/css">    
-    <link rel="stylesheet" href="resources/css/style.css" type="text/css">
     <title>Colmar Academy</title>
+    <link rel="stylesheet" href="resources/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin:400,500|Oxygen:400,700|Quattrocento+Sans" rel="stylesheet">
+    <link rel="icon" href="./resources/images/ic-logo.ico" type="image/x-icon">
   </head>
   <body>
 
@@ -20,12 +21,20 @@
         <span><a href="">For companies</a></span>
         <span><a href="">Sign in</a></span>
       </nav>
+      <nav class="IconNav">
+        <span><a href="#"><img Class="Icon" src=".\resources\images\ic-logo.svg"></a></span>
+        <span><a href="#"><img src=".\resources\images\ic-on-campus.svg"></a></span>
+        <span><a href="#"><img src=".\resources\images\ic-online.svg"></a></span>
+        <span><a href="#"><img src=".\resources\images\ic-login.svg"></a></span>
+      </nav>
+</header>
     </header>
 
 <!--Main Banner Section-->
       <div class="MainBanner">
         <div class="BannerImg">
           <img src=".\resources\images\banner.jpg" alt="Pic of Student Studying">
+          <img class="MobileBannerImg" src=".\resources\images\banner - copy.jpg">
         </div>
           <div class="MainBannerText">
             <h2>Learn something new everyday</h2>
@@ -51,9 +60,10 @@
 
 <!-- Right Side -->
 
-  <div class="RigtContent">
+  <div class="RightContent">
     <div class="orientation">
       <img src=".\resources\images\information-orientation.jpg" alt="Walking Path with Students">
+      <img id="mobile-orientation-img" src=".\resources\images\information-orientation-mobile.jpg">
       <div class="OrientationText">
         <h4>Orientation date</h4>
         <p>Tue 10/11 & Wed 10/12: 8am-3pm</p>
@@ -62,7 +72,8 @@
     </div>
     <div class="campus">
       <img src=".\resources\images\information-campus.jpg" alt="Class room with map">
-      <div class="OrientationText">
+      <img id="mobile-campus-img" src=".\resources\images\information-campus-mobile.jpg">
+      <div class="CampusText">
         <h4>Our campus</h4>
         <p>Find which campus is close by you</p>
         <span><a herf="#">Read more</a></span>
@@ -70,7 +81,8 @@
     </div>
     <div class="GuestLecture">
       <img src=".\resources\images\information-guest-lecture.jpg" alt="Pic of guest lecture">
-      <div class="OrientationText">
+      <img id="mobile-lecture-img" src=".\resources\images\information-guest-lecture-mobile.jpg">
+      <div class="GuestLectureText">
         <h4>Our guest lecture</h4>
         <p>Join a keynote with Oliver Sack about music in medical treament</p>
         <span><a herf="#">Read more</a></span>
@@ -129,7 +141,10 @@
 <!--Left Side-->
 
 <div class="ThesisBanner">
-  <h3>Thesis exhibit</h3>
+  <div class="Title">
+    <h3>Thesis exhibit</h3>
+  </div>
+
   <div class="VideoContent">
     <div class="ThesisVideo">
       <video src=".\resources\videos\thesis.mp4" controls>
@@ -166,7 +181,7 @@
 
 <footer>
   <p>&#9400; 2016 Colmar Academy. All rights reserved.<p>
-  <p class="terms-privacy">Terms &ensp; Privacy</p>
+  <p class="TermsPrivacy">Terms &ensp; Privacy</p>
 </footer>
 
 
